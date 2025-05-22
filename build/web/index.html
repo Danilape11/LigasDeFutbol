@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html style="background: url('/LigasDeFutbol/imagenes/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;">
+
+    <head>
+        <title>Administración de Ligas de Fútbol</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Aqui en Style vamos a diseñar el estilo de nuestro index -->
+
+        <style>
+
+            body {
+                margin: 0;
+            }
+
+            .titulo {
+                background-color: #4CAF50;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                font-family: "Comic Sans MS", cursive;
+                font-size: 34px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            nav {
+                background-color: #388E3C;
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                padding: 10px 0;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-family: "Comic Sans MS", cursive;
+                font-size: 18px;
+                transition: 0.3s;
+            }
+
+            nav a:hover {
+                color: #FFD700;
+            }
+
+            .parrafo {
+                font-family: "Comic Sans MS", cursive;
+                font-size: 18px;
+                color: #ffffff;
+                line-height: 1.7;
+                text-align: justify;
+                margin: 20px auto;
+                padding: 10px;
+                max-width: 1000px;
+            }
+
+            .parrafo2 {
+                font-family: "Comic Sans MS", cursive;
+                font-size: 24px;
+                color: white;
+                text-align: center;
+                margin: 20px;
+                padding: 10px;
+            }
+
+            .imagenIndex {
+                border-radius: 8px;
+                display: block;
+                margin: 20px auto;
+                width: 60%;
+            }
+
+            .imagenIndex:hover {
+                transform: scale(1.03);
+            }
+
+            .fila {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+                flex-wrap: wrap;
+            }
+
+            .fila img {
+                border-radius: 8px;
+                width: 480px;
+                height: auto;
+                transition: 0.3s;
+            }
+
+            .fila img:hover {
+                transform: scale(1.03);
+            }
+
+            .imagen_centro {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .imagen_centro img {
+                border-radius: 8px;
+                width: 500px;
+                height: auto;
+            }
+
+            .imagen_centro img:hover {
+                transform: scale(1.03);
+            }
+
+            .boton-liga {
+                display: block;
+                background-color: #FF5722;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                font-family: "Comic Sans MS", cursive;
+                padding: 12px 20px;
+                margin: 30px auto;
+                width: 220px;
+                border-radius: 10px;
+                font-size: 18px;
+                transition: 0.3s;
+            }
+
+            .boton-accion:hover {
+                background-color: #E64A19;
+            }
+
+            hr {
+                border: 0;
+                height: 2px;
+                background: #ffffff;
+                margin: 20px 0;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .piepagina {
+                background-color: #4CAF50;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                font-family: "Comic Sans MS", cursive;
+                margin-top: 40px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="titulo">⚽ ADMINISTRACIÓN DE LIGAS DE FÚTBOL ⚽</div>
+
+        <nav>
+
+            <a href="/LigasDeFutbol/SvLiga?accion=listar">LIGAS</a>
+            <a href="/LigasDeFutbol/SvEquipo?accion=listar">EQUIPOS</a>  <!-- Aqui ponemos los tres enlaces a nuestros tres jsp -->
+            <a href="/LigasDeFutbol/SvJugador?accion=listar">JUGADORES</a>
+
+        </nav>
+
+        <hr>
+
+        <p class="parrafo">¡Bienvenido a nuestra plataforma! Aquí podrás gestionar todas tus ligas de fútbol de forma fácil y rápida. Crea ligas, forma equipos, registra jugadores y mantén todo actualizado. También puedes modificar o eliminar cualquier liga, equipo o jugador cuando lo necesites. ¡Todo el control de tus competiciones de fútbol en un solo sitio!</p>
+
+        <img class="imagenIndex" src="imagenes/fotoIndex.png">
+
+        <p class="parrafo2">⚽ ¡Llama a tus amigos, arma tu equipo y únete a una liga!</p>
+
+        <div class="fila">
+
+            <img src="imagenes/fotoIndex2.png">
+            <img src="imagenes/fotoIndex3.png">
+
+        </div>
+
+        <div class="imagen_centro">
+
+            <img src="imagenes/fotoIndex4.png">
+
+        </div>
+
+        <a class="boton-liga" href="/LigasDeFutbol/SvLiga?accion=nueva">🎉 Crear Nueva Liga</a>
+
+        <div class="piepagina">
+
+            2025 Ligas de Fútbol | Desarrollado por Dani ⚽
+
+        </div>
+
+    </body>
+
+</html>
